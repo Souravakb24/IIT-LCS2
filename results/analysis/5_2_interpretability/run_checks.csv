@@ -1,0 +1,3 @@
+model,items,accuracy,mean p(answer),max |p - saved Part A|,completeness error median,completeness error max,items completeness < 10%,non-finite gradient points,IG steps,random draws
+meta-llama/Llama-3.2-3B-Instruct,40,0.35,0.6040265,0.003925,0.0122875,0.079886,40,0,256,20
+Qwen/Qwen2.5-3B-Instruct,40,0.35,0.835147175,0.012987,0.2207575,2.902976,8,0,256,20

@@ -1,0 +1,11 @@
+analysis,relationship,model,n (failed / total),estimate [95% CI],p,note
+primary: clean uncertainty → failure (AUROC),misleading flip (5.1),Llama-3.2-3B-Instruct,35/60,"0.63 [0.48, 0.77]",0.099,
+primary: clean uncertainty → failure (AUROC),injection hijack (5.4.1),Llama-3.2-3B-Instruct,29/52,"0.80 [0.67, 0.91]",<0.001,
+primary: clean uncertainty → failure (AUROC),canary leak (5.4.2),Llama-3.2-3B-Instruct,8/60,"0.60 [0.36, 0.81]",0.397,exploratory: few failures
+primary: clean uncertainty → failure (AUROC),misleading flip (5.1),Qwen2.5-3B-Instruct,43/60,"0.52 [0.33, 0.69]",0.857,
+primary: clean uncertainty → failure (AUROC),injection hijack (5.4.1),Qwen2.5-3B-Instruct,9/54,"0.68 [0.50, 0.85]",0.095,exploratory: few failures
+primary: clean uncertainty → failure (AUROC),canary leak (5.4.2),Qwen2.5-3B-Instruct,0/60,—,—,not estimable (0 failures)
+secondary,same items? misleading->k vs injection->k (Fisher),Llama-3.2-3B-Instruct,52,"odds ratio (Haldane): 3.86 [1.23, 12.07]",0.024 (Holm 0.048),
+secondary,metadata instability vs clean uncertainty (Spearman),Llama-3.2-3B-Instruct,60,"Spearman rho: 0.45 [0.27, 0.59]",<0.001 (Holm 0.001),
+secondary,same items? misleading->k vs injection->k (Fisher),Qwen2.5-3B-Instruct,54,"odds ratio (Haldane): 9.66 [0.53, 177.03]",0.049 (Holm 0.049),
+secondary,metadata instability vs clean uncertainty (Spearman),Qwen2.5-3B-Instruct,60,"Spearman rho: 0.56 [0.38, 0.72]",<0.001 (Holm <0.001),

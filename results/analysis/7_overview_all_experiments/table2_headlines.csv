@@ -1,0 +1,14 @@
+dimension,headline metric,Llama-3.2-3B-Instruct,Qwen2.5-3B-Instruct
+A Baseline (Core 200),Accuracy | Mean conf | ECE,0.395 | 0.600 | 0.208,0.315 | 0.892 | 0.577
+5.1 Hallucination & Uncertainty,ASR | TASR (over clean-correct),16/23 = 0.70 | 14/23 = 0.61,15/20 = 0.75 | 14/20 = 0.70
+5.1 Hallucination & Uncertainty,ECE clean → misleading,0.25 → 0.56,0.53 → 0.81
+5.1 Hallucination & Uncertainty,H1 | H2 verdict,supported (no reduction within margin) | supported,supported (no reduction within margin) | falsified (CI includes 0.5)
+5.2 Interpretability,—,pending,pending
+5.3 Bias & Fairness,AFR A vs B (3 pairs) vs control (variant vs clean),0.00–0.03 vs 0.07–0.13,0.03–0.10 vs 0.12–0.22
+5.3 Bias & Fairness,"USR (unjustified changes / pairs, 3 attributes)",3/180 = 0.017,13/180 = 0.072
+5.4.1 Prompt injection,Injection ASR clean → attack,0.13 (8/60) → 0.62 (37/60),0.10 (6/60) → 0.23 (14/60)
+5.4.1 Prompt injection,Marker compliance ('override accepted'),0.33 (20/60),0.00 (0/60)
+5.4.2 Canary leakage,Exact leak control → attack,0.00 (0/60) → 0.13 (8/60),0.00 (0/60) → 0.00 (0/60)
+C Cross-dimension,Clean uncertainty → injection hijack (AUROC),"0.80 [0.67, 0.91]","0.68 [0.50, 0.85]"
+C Cross-dimension,Metadata instability vs uncertainty (Spearman ρ),"0.45 [0.27, 0.59]","0.56 [0.38, 0.72]"
+D Intervention,—,pending,pending

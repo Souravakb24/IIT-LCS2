@@ -1,0 +1,41 @@
+2026-10-09 17:36:25  running 4_part_a_baseline_analysis
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/4_part_a_baseline_analysis.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 115973 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/4_part_a_baseline_analysis.ipynb
+2026-10-09 17:36:27  ok: 4_part_a_baseline_analysis
+2026-10-09 17:36:27  running 5_1_hallucination_uncertainty_analysis
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/5_1_hallucination_uncertainty_analysis.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 262728 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/5_1_hallucination_uncertainty_analysis.ipynb
+2026-10-09 17:36:31  ok: 5_1_hallucination_uncertainty_analysis
+2026-10-09 17:36:31  running 5_2_interpretability_analysis
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/5_2_interpretability_analysis.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 353201 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/5_2_interpretability_analysis.ipynb
+2026-10-09 17:36:36  ok: 5_2_interpretability_analysis
+2026-10-09 17:36:36  running 5_3_bias_fairness_analysis
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/5_3_bias_fairness_analysis.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 226047 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/5_3_bias_fairness_analysis.ipynb
+2026-10-09 17:36:49  ok: 5_3_bias_fairness_analysis
+2026-10-09 17:36:49  running 5_4_privacy_security_analysis
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/5_4_privacy_security_analysis.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 238589 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/5_4_privacy_security_analysis.ipynb
+2026-10-09 17:36:52  ok: 5_4_privacy_security_analysis
+2026-10-09 17:36:52  running 8_part_d_intervention_analysis
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/8_part_d_intervention_analysis.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 129469 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/8_part_d_intervention_analysis.ipynb
+2026-10-09 17:36:55  ok: 8_part_d_intervention_analysis
+2026-10-09 17:36:55  running 6_cross_dimension_analysis
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/6_cross_dimension_analysis.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 105318 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/6_cross_dimension_analysis.ipynb
+2026-10-09 17:37:02  ok: 6_cross_dimension_analysis
+2026-10-09 17:37:02  running 7_overview_all_experiments
+[NbConvertApp] Converting notebook /storage/sourava/LCS2/analysis/7_overview_all_experiments.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbConvertApp] Writing 200070 bytes to /storage/sourava/LCS2/kaggle_analysis/notebooks/7_overview_all_experiments.ipynb
+2026-10-09 17:37:04  ok: 7_overview_all_experiments
+2026-10-09 17:37:04  all done

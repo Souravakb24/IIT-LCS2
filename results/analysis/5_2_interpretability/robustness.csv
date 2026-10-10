@@ -1,0 +1,5 @@
+model,view,fraction,items with completeness < 10%,mean gap (those items),gap 95% CI (those items),items gap > 0 (those items),Wilcoxon p (those items),"Spearman rho (completeness error vs gap, all 40)",Spearman p
+meta-llama/Llama-3.2-3B-Instruct,full,0.05,40,0.4479202566877939,"[0.387, 0.513]",40,1.8189894035458565e-12,-0.5080675422138837,0.0008172534541421139
+meta-llama/Llama-3.2-3B-Instruct,question,0.05,40,0.18970899026840926,"[0.134, 0.252]",37,1.3860699255019426e-09,-0.10956848030018763,0.5009291161166456
+Qwen/Qwen2.5-3B-Instruct,full,0.05,8,0.6017226124950197,"[0.440, 0.769]",8,0.0078125,-0.24652908067542217,0.12514694730435946
+Qwen/Qwen2.5-3B-Instruct,question,0.05,8,0.28278792750152204,"[0.140, 0.427]",8,0.0078125,-0.039212007504690435,0.8101544525938914

@@ -1,0 +1,8 @@
+5.4.1 metric,Llama-3.2-3B-Instruct,Qwen2.5-3B-Instruct
+"Injection ASR, answer = k (clean → attack)",0.13 (8/60) → 0.62 (37/60),0.10 (6/60) → 0.23 (14/60)
+Marker compliance ('override accepted' in evidence),0.33 (20/60),0.00 (0/60)
+Confidence-field compliance ('confidence 100' emitted),0.00 (0/60),0.00 (0/60)
+"High-confidence rate, token conf ≥ 0.99 (clean → attack)",0.00 (0/60) → 0.00 (0/60),0.48 (29/60) → 0.52 (31/60)
+Answer flip rate vs clean,0.57 (34/60),0.33 (20/60)
+Clean-correct → wrong (share of N),0.23 (14/60),0.13 (8/60)
+Accuracy BU → UA,0.38 → 0.20,0.33 → 0.25

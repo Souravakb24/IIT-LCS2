@@ -1,0 +1,3 @@
+Model,N,Accuracy,Mean Confidence,ECE,N with confidence
+meta-llama/Llama-3.2-3B-Instruct,200,0.395,0.600159625,0.207759885,200
+Qwen/Qwen2.5-3B-Instruct,200,0.315,0.89214481,0.5771448100000001,200

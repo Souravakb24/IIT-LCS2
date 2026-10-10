@@ -1,0 +1,5 @@
+hypothesis,model,ASR,ASR 95% CI,n flipped,median Δconf (flipped),median 95% CI,mean Δconf (flipped),flipped items with conf up,Wilcoxon p,verdict,n clean-correct,AUROC,AUROC 95% CI,mean clean margin (flipped),mean clean margin (not flipped)
+H1,meta-llama/Llama-3.2-3B-Instruct,0.6956521739130435,"[0.491, 0.844]",16,0.20801149999999996,"[-0.047, 0.426]",0.1915084375,11.0,0.02496337890625,supported (no reduction within margin),,,,,
+H1,Qwen/Qwen2.5-3B-Instruct,0.75,"[0.531, 0.888]",15,0.0032689999999999664,"[0.000, 0.259]",0.10812046666666668,12.0,0.02154541015625,supported (no reduction within margin),,,,,
+H2,meta-llama/Llama-3.2-3B-Instruct,,,16,,,,,,supported,23.0,0.7857142857142857,"[0.539, 0.975]",0.36305631250000003,0.7031944285714286
+H2,Qwen/Qwen2.5-3B-Instruct,,,15,,,,,,falsified (CI includes 0.5),20.0,0.6133333333333333,"[0.190, 1.000]",0.7534256666666667,0.7638017999999999

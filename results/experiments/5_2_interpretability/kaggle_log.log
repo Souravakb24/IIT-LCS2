@@ -1,0 +1,111 @@
+[{"stream_name":"stderr","time":7.796229308,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.796276097,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.796280444,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.796283172,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.448306537,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.448353103,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.448358854,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.448363025,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":29.089234394,"data":"on kaggle: True | project root: /kaggle/working | baseline \u003c- /kaggle/input/notebooks/souravakumarbehera/lcs2-4-part-a-baseline/kaggle_outputs/4_part_a_baseline\n"}
+,{"stream_name":"stdout","time":29.089266206,"data":"torch 2.11.0+cu128 | transformers 5.16.1 | Tesla T4\n"}
+,{"stream_name":"stdout","time":29.089292862,"data":"prompt: clean | outputs -\u003e /kaggle/working/kaggle_outputs/5_2_interpretability\n"}
+,{"stream_name":"stdout","time":30.00957538,"data":"rows: 449 | interpretability: 40 (row_index 0..39)\n"}
+,{"stream_name":"stdout","time":30.009606131,"data":"dataset commit: 9757095598b6555c3e935679fdb7384aed4eb651 | sha256: 0c7db2295ca5bf22 ...\n"}
+,{"stream_name":"stdout","time":38.717013608,"data":"helpers ready\n"}
+,{"stream_name":"stdout","time":38.769118706,"data":"llama: 40 clean records | prompts identical | accuracy on interpretability set = 0.350\n"}
+,{"stream_name":"stdout","time":38.7691647,"data":"qwen: 40 clean records | prompts identical | accuracy on interpretability set = 0.350\n"}
+,{"stream_name":"stdout","time":38.793454537,"data":"explain_item ready\n"}
+,{"stream_name":"stdout","time":38.916516949,"data":"llama: 0 already saved, 40 to run -\u003e llama_interp.jsonl\n"}
+,{"stream_name":"stdout","time":87.463542408,"data":"revision: 0cb88a4f764b7a12671c53f0838cd831a0843b95\n"}
+,{"stream_name":"stdout","time":241.216980076,"data":"  1/40 row  0 | 153.7s | completeness error 0.015 | elapsed 154s\n"}
+,{"stream_name":"stdout","time":402.757503829,"data":"  2/40 row  1 | 161.5s | completeness error 0.001 | elapsed 315s\n"}
+,{"stream_name":"stdout","time":886.335265735,"data":"  3/40 row  2 | 483.6s | completeness error 0.003 | elapsed 799s\n"}
+,{"stream_name":"stdout","time":1011.501322635,"data":"  4/40 row  3 | 125.2s | completeness error 0.016 | elapsed 924s\n"}
+,{"stream_name":"stdout","time":1170.850680461,"data":"  5/40 row  4 | 159.3s | completeness error 0.002 | elapsed 1083s\n"}
+,{"stream_name":"stdout","time":1340.61042582,"data":"  6/40 row  5 | 169.8s | completeness error 0.002 | elapsed 1253s\n"}
+,{"stream_name":"stdout","time":1470.370287425,"data":"  7/40 row  6 | 129.8s | completeness error 0.007 | elapsed 1383s\n"}
+,{"stream_name":"stdout","time":1639.960279369,"data":"  8/40 row  7 | 169.6s | completeness error 0.012 | elapsed 1552s\n"}
+,{"stream_name":"stdout","time":1803.556229018,"data":"  9/40 row  8 | 163.6s | completeness error 0.030 | elapsed 1716s\n"}
+,{"stream_name":"stdout","time":2016.950792656,"data":"  10/40 row  9 | 213.4s | completeness error 0.021 | elapsed 1929s\n"}
+,{"stream_name":"stdout","time":2181.309606163,"data":"  11/40 row 10 | 164.4s | completeness error 0.002 | elapsed 2094s\n"}
+,{"stream_name":"stdout","time":2354.29462044,"data":"  12/40 row 11 | 173.0s | completeness error 0.012 | elapsed 2267s\n"}
+,{"stream_name":"stdout","time":2524.558615782,"data":"  13/40 row 12 | 170.3s | completeness error 0.031 | elapsed 2437s\n"}
+,{"stream_name":"stdout","time":2736.139410072,"data":"  14/40 row 13 | 211.6s | completeness error 0.006 | elapsed 2649s\n"}
+,{"stream_name":"stdout","time":2916.588274408,"data":"  15/40 row 14 | 180.5s | completeness error 0.005 | elapsed 2829s\n"}
+,{"stream_name":"stdout","time":3042.631757932,"data":"  16/40 row 15 | 126.0s | completeness error 0.005 | elapsed 2955s\n"}
+,{"stream_name":"stdout","time":3211.218501636,"data":"  17/40 row 16 | 168.6s | completeness error 0.049 | elapsed 3124s\n"}
+,{"stream_name":"stdout","time":3370.666949043,"data":"  18/40 row 17 | 159.4s | completeness error 0.005 | elapsed 3283s\n"}
+,{"stream_name":"stdout","time":3528.445289605,"data":"  19/40 row 18 | 157.8s | completeness error 0.002 | elapsed 3441s\n"}
+,{"stream_name":"stdout","time":3692.589879285,"data":"  20/40 row 19 | 164.1s | completeness error 0.015 | elapsed 3605s\n"}
+,{"stream_name":"stdout","time":3853.207202597,"data":"  21/40 row 20 | 160.6s | completeness error 0.018 | elapsed 3766s\n"}
+,{"stream_name":"stdout","time":4005.481299575,"data":"  22/40 row 21 | 152.3s | completeness error 0.012 | elapsed 3918s\n"}
+,{"stream_name":"stdout","time":4177.380166978,"data":"  23/40 row 22 | 171.9s | completeness error 0.027 | elapsed 4090s\n"}
+,{"stream_name":"stdout","time":4302.084658341,"data":"  24/40 row 23 | 124.7s | completeness error 0.017 | elapsed 4215s\n"}
+,{"stream_name":"stdout","time":4460.678439314,"data":"  25/40 row 24 | 158.6s | completeness error 0.005 | elapsed 4373s\n"}
+,{"stream_name":"stdout","time":4614.038704761,"data":"  26/40 row 25 | 153.4s | completeness error 0.007 | elapsed 4527s\n"}
+,{"stream_name":"stdout","time":4775.073990885,"data":"  27/40 row 26 | 161.0s | completeness error 0.006 | elapsed 4688s\n"}
+,{"stream_name":"stdout","time":4938.616178921,"data":"  28/40 row 27 | 163.5s | completeness error 0.038 | elapsed 4851s\n"}
+,{"stream_name":"stdout","time":5067.03112184,"data":"  29/40 row 28 | 128.4s | completeness error 0.025 | elapsed 4980s\n"}
+,{"stream_name":"stdout","time":5250.923834564,"data":"  30/40 row 29 | 183.9s | completeness error 0.008 | elapsed 5163s\n"}
+,{"stream_name":"stdout","time":5374.853914621,"data":"  31/40 row 30 | 123.9s | completeness error 0.001 | elapsed 5287s\n"}
+,{"stream_name":"stdout","time":5539.648823392,"data":"  32/40 row 31 | 164.8s | completeness error 0.014 | elapsed 5452s\n"}
+,{"stream_name":"stdout","time":5697.150703803,"data":"  33/40 row 32 | 157.5s | completeness error 0.045 | elapsed 5610s\n"}
+,{"stream_name":"stdout","time":5872.820430464,"data":"  34/40 row 33 | 175.7s | completeness error 0.013 | elapsed 5785s\n"}
+,{"stream_name":"stdout","time":6041.83386472,"data":"  35/40 row 34 | 169.0s | completeness error 0.011 | elapsed 5954s\n"}
+,{"stream_name":"stdout","time":6203.293127295,"data":"  36/40 row 35 | 161.5s | completeness error 0.073 | elapsed 6116s\n"}
+,{"stream_name":"stdout","time":6328.571923712,"data":"  37/40 row 36 | 125.3s | completeness error 0.001 | elapsed 6241s\n"}
+,{"stream_name":"stdout","time":6505.000387132,"data":"  38/40 row 37 | 176.4s | completeness error 0.037 | elapsed 6418s\n"}
+,{"stream_name":"stdout","time":6677.215264678,"data":"  39/40 row 38 | 172.2s | completeness error 0.030 | elapsed 6590s\n"}
+,{"stream_name":"stdout","time":6863.365738406,"data":"  40/40 row 39 | 186.1s | completeness error 0.080 | elapsed 6776s\n"}
+,{"stream_name":"stdout","time":6863.760841389,"data":"qwen: 0 already saved, 40 to run -\u003e qwen_interp.jsonl\n"}
+,{"stream_name":"stdout","time":6896.001631483,"data":"revision: aa8e72537993ba99e69dfaafa59ed015b17504d1\n"}
+,{"stream_name":"stdout","time":7043.218373704,"data":"  1/40 row  0 | 147.2s | completeness error 0.389 | elapsed 147s\n"}
+,{"stream_name":"stdout","time":7186.748872569,"data":"  2/40 row  1 | 143.5s | completeness error 0.434 | elapsed 291s\n"}
+,{"stream_name":"stdout","time":7608.12856009,"data":"  3/40 row  2 | 421.4s | completeness error 0.033 | elapsed 712s\n"}
+,{"stream_name":"stdout","time":7720.193285891,"data":"  4/40 row  3 | 112.1s | completeness error 1.214 | elapsed 824s\n"}
+,{"stream_name":"stdout","time":7860.60458992,"data":"  5/40 row  4 | 140.4s | completeness error 0.204 | elapsed 965s\n"}
+,{"stream_name":"stdout","time":8011.496862211,"data":"  6/40 row  5 | 150.9s | completeness error 0.836 | elapsed 1115s\n"}
+,{"stream_name":"stdout","time":8127.019458076,"data":"  7/40 row  6 | 115.5s | completeness error 0.715 | elapsed 1231s\n"}
+,{"stream_name":"stdout","time":8277.348253655,"data":"  8/40 row  7 | 150.3s | completeness error 1.400 | elapsed 1381s\n"}
+,{"stream_name":"stdout","time":8419.890012794,"data":"  9/40 row  8 | 142.5s | completeness error 0.029 | elapsed 1524s\n"}
+,{"stream_name":"stdout","time":8609.12355446,"data":"  10/40 row  9 | 189.2s | completeness error 0.068 | elapsed 1713s\n"}
+,{"stream_name":"stdout","time":8753.865472283,"data":"  11/40 row 10 | 144.7s | completeness error 0.302 | elapsed 1858s\n"}
+,{"stream_name":"stdout","time":8908.080617554,"data":"  12/40 row 11 | 154.2s | completeness error 0.733 | elapsed 2012s\n"}
+,{"stream_name":"stdout","time":9058.843279733,"data":"  13/40 row 12 | 150.8s | completeness error 0.116 | elapsed 2163s\n"}
+,{"stream_name":"stdout","time":9243.862081555,"data":"  14/40 row 13 | 185.0s | completeness error 0.195 | elapsed 2348s\n"}
+,{"stream_name":"stdout","time":9410.637466149,"data":"  15/40 row 14 | 166.8s | completeness error 0.005 | elapsed 2515s\n"}
+,{"stream_name":"stdout","time":9524.74776048,"data":"  16/40 row 15 | 114.1s | completeness error 0.332 | elapsed 2629s\n"}
+,{"stream_name":"stdout","time":9673.476338614,"data":"  17/40 row 16 | 148.7s | completeness error 0.028 | elapsed 2777s\n"}
+,{"stream_name":"stdout","time":9795.642817967,"data":"  18/40 row 17 | 122.2s | completeness error 0.238 | elapsed 2900s\n"}
+,{"stream_name":"stdout","time":9919.031646923,"data":"  19/40 row 18 | 123.4s | completeness error 0.151 | elapsed 3023s\n"}
+,{"stream_name":"stdout","time":10062.47194345,"data":"  20/40 row 19 | 143.4s | completeness error 0.148 | elapsed 3166s\n"}
+,{"stream_name":"stdout","time":10203.159472608,"data":"  21/40 row 20 | 140.7s | completeness error 0.257 | elapsed 3307s\n"}
+,{"stream_name":"stdout","time":10325.24063795,"data":"  22/40 row 21 | 122.1s | completeness error 0.238 | elapsed 3429s\n"}
+,{"stream_name":"stdout","time":10479.210482458,"data":"  23/40 row 22 | 154.0s | completeness error 0.011 | elapsed 3583s\n"}
+,{"stream_name":"stdout","time":10591.335493893,"data":"  24/40 row 23 | 112.1s | completeness error 0.244 | elapsed 3695s\n"}
+,{"stream_name":"stdout","time":10734.651913046,"data":"  25/40 row 24 | 143.3s | completeness error 0.257 | elapsed 3839s\n"}
+,{"stream_name":"stdout","time":10855.573108525,"data":"  26/40 row 25 | 120.9s | completeness error 2.903 | elapsed 3960s\n"}
+,{"stream_name":"stdout","time":10997.02293288,"data":"  27/40 row 26 | 141.4s | completeness error 0.111 | elapsed 4101s\n"}
+,{"stream_name":"stdout","time":11143.312686786,"data":"  28/40 row 27 | 146.3s | completeness error 0.885 | elapsed 4247s\n"}
+,{"stream_name":"stdout","time":11257.319676861,"data":"  29/40 row 28 | 114.0s | completeness error 0.246 | elapsed 4361s\n"}
+,{"stream_name":"stdout","time":11421.788577933,"data":"  30/40 row 29 | 164.5s | completeness error 0.133 | elapsed 4526s\n"}
+,{"stream_name":"stdout","time":11533.936816079,"data":"  31/40 row 30 | 112.1s | completeness error 0.125 | elapsed 4638s\n"}
+,{"stream_name":"stdout","time":11682.518848903,"data":"  32/40 row 31 | 148.6s | completeness error 0.111 | elapsed 4787s\n"}
+,{"stream_name":"stdout","time":11805.935444003,"data":"  33/40 row 32 | 123.4s | completeness error 0.077 | elapsed 4910s\n"}
+,{"stream_name":"stdout","time":11963.797274575,"data":"  34/40 row 33 | 157.9s | completeness error 0.472 | elapsed 5068s\n"}
+,{"stream_name":"stdout","time":12112.710024193,"data":"  35/40 row 34 | 148.9s | completeness error 0.201 | elapsed 5217s\n"}
+,{"stream_name":"stdout","time":12253.950652855,"data":"  36/40 row 35 | 141.2s | completeness error 0.124 | elapsed 5358s\n"}
+,{"stream_name":"stdout","time":12368.36873661,"data":"  37/40 row 36 | 114.4s | completeness error 0.093 | elapsed 5472s\n"}
+,{"stream_name":"stdout","time":12526.071187729,"data":"  38/40 row 37 | 157.7s | completeness error 0.113 | elapsed 5630s\n"}
+,{"stream_name":"stdout","time":12678.680389731,"data":"  39/40 row 38 | 152.6s | completeness error 2.350 | elapsed 5783s\n"}
+,{"stream_name":"stdout","time":12849.795117114,"data":"  40/40 row 39 | 171.0s | completeness error 0.977 | elapsed 5954s\n"}
+,{"stream_name":"stdout","time":12850.017154029,"data":"wrote /kaggle/working/kaggle_outputs/5_2_interpretability/run_meta.json\n"}
+,{"stream_name":"stderr","time":12856.261679844,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":12856.261713609,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":12856.45401915,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":12856.454049044,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":12857.197315752,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":12857.315350622,"data":"[NbConvertApp] Writing 317221 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":12859.73226766,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":12860.401195777,"data":"[NbConvertApp] Writing 628235 bytes to __results__.html\n"}
+]

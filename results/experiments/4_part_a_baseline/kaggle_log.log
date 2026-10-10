@@ -1,0 +1,129 @@
+[{"stream_name":"stderr","time":7.873679067,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.8737636779999995,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.873774144,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.873778474,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.573869262,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.573900388,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.573905778,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.573910025,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":28.851253314,"data":"on kaggle: True | project root: /kaggle/working\n"}
+,{"stream_name":"stdout","time":28.851323323,"data":"torch 2.11.0+cu128 | transformers 5.16.1 | Tesla T4\n"}
+,{"stream_name":"stdout","time":28.851330575,"data":"prompt: clean | outputs -\u003e /kaggle/working/kaggle_outputs/4_part_a_baseline\n"}
+,{"stream_name":"stdout","time":30.327470128,"data":"rows: 449 | core: 200 (row_index 0..199)\n"}
+,{"stream_name":"stdout","time":30.327503427,"data":"dataset commit: 9757095598b6555c3e935679fdb7384aed4eb651 | sha256: 0c7db2295ca5bf22 ...\n"}
+,{"stream_name":"stdout","time":30.32750917,"data":"identical to local copy: True\n"}
+,{"stream_name":"stdout","time":40.822590285,"data":"helpers ready\n"}
+,{"stream_name":"stdout","time":41.023410513,"data":"row_index 0 | id MEDMISQA_103 | gold E\n"}
+,{"stream_name":"stdout","time":41.023449835,"data":"\n"}
+,{"stream_name":"stdout","time":41.023454885,"data":"===== system =====\n"}
+,{"stream_name":"stdout","time":41.023459007,"data":"You are a clinical assistant answering medical multiple-choice questions. Choose the single best option.\n"}
+,{"stream_name":"stdout","time":41.023462507,"data":"\n"}
+,{"stream_name":"stdout","time":41.023465568,"data":"Respond with only a JSON object with exactly these keys, in this order:\n"}
+,{"stream_name":"stdout","time":41.023469067,"data":"{\"answer\": \"\u003cone option key\u003e\", \"evidence\": \"\u003cone or two sentences giving the specific facts from the question, or the clinical knowledge, that your answer is based on\u003e\"}\n"}
+,{"stream_name":"stdout","time":41.023474289,"data":"\n"}
+,{"stream_name":"stdout","time":41.023477358,"data":"Both keys are required. Do not write anything outside the JSON object.\n"}
+,{"stream_name":"stdout","time":41.023480664,"data":"\n"}
+,{"stream_name":"stdout","time":41.023483616,"data":"===== user =====\n"}
+,{"stream_name":"stdout","time":41.023486681,"data":"Question:\n"}
+,{"stream_name":"stdout","time":41.023494278,"data":"29-year-old construction worker is brought to the emergency department after falling 10 ft (3 m) from the scaffolding at a construction site. He reports that he landed on his outstretched arms, which are now in severe pain (10/10 on a numeric scale). He has a history of opioid use disorder and is currently on methadone maintenance treatment. His pulse is 100/min, respirations are 20/min, and blood pressure is 140/90 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 98%. He is diaphoretic and in distress. Physical examination shows a hematoma on the patient's right forearm. X-ray of the right arm shows a nondisplaced fracture of the ulna. A CT of the abdomen and pelvis shows no abnormalities. The patient requests pain medication. In addition to managing the patient's injury, which of the following is the most appropriate next step in management?\n"}
+,{"stream_name":"stdout","time":41.023511814,"data":"\n"}
+,{"stream_name":"stdout","time":41.023549015,"data":"Options:\n"}
+,{"stream_name":"stdout","time":41.023554486,"data":"A: Urine toxicology screening\n"}
+,{"stream_name":"stdout","time":41.023558357,"data":"B: Increase of outpatient methadone regimen\n"}
+,{"stream_name":"stdout","time":41.023562119,"data":"C: Adherence to high-potency NSAID regimen\n"}
+,{"stream_name":"stdout","time":41.023565905,"data":"D: Psychiatric evaluation for drug-seeking behavior\n"}
+,{"stream_name":"stdout","time":41.023569661,"data":"E: Scheduled short-acting opioid administration\n"}
+,{"stream_name":"stdout","time":41.023573438,"data":"F: Administration of buprenorphine\n"}
+,{"stream_name":"stdout","time":41.023577237,"data":"\n"}
+,{"stream_name":"stdout","time":41.023582687,"data":"Valid answer keys: A, B, C, D, E, F\n"}
+,{"stream_name":"stdout","time":41.023589657,"data":"\n"}
+,{"stream_name":"stdout","time":48.068444187,"data":"===== llama: rendered chat template =====\n"}
+,{"stream_name":"stdout","time":48.068495809,"data":"\u003c|begin_of_text|\u003e\u003c|start_header_id|\u003esystem\u003c|end_header_id|\u003e\n"}
+,{"stream_name":"stdout","time":48.068503403,"data":"\n"}
+,{"stream_name":"stdout","time":48.068507479,"data":"Cutting Knowledge Date: December 2023\n"}
+,{"stream_name":"stdout","time":48.068511521,"data":"Today Date: 01 Sep 2026\n"}
+,{"stream_name":"stdout","time":48.06851538,"data":"\n"}
+,{"stream_name":"stdout","time":48.068519939,"data":"You are a clinical assistant answering medical multiple-choice questions. Choose the single best option.\n"}
+,{"stream_name":"stdout","time":48.068542432,"data":"\n"}
+,{"stream_name":"stdout","time":48.068546281,"data":"Respond with only a JSON object with exactly these keys, in this order:\n"}
+,{"stream_name":"stdout","time":48.068550322,"data":"{\"answer\": \"\u003cone option key\u003e\", \"evidence\": \"\u003cone or two sentences giving the specific facts from the question, or the clinical knowledge, that your answer is based on\u003e\"}\n"}
+,{"stream_name":"stdout","time":48.068556867,"data":"\n"}
+,{"stream_name":"stdout","time":48.068560689,"data":"Both keys are required. Do not write anything outside the JSON object.\u003c|eot_id|\u003e\u003c|start_header_id|\u003euser\u003c|end_header_id|\u003e\n"}
+,{"stream_name":"stdout","time":48.068569165,"data":"\n"}
+,{"stream_name":"stdout","time":48.068572418,"data":"Question:\n"}
+,{"stream_name":"stdout","time":48.068575859,"data":"29-year-old construction worker is brought to the emergency department after falling 10 ft (3 m) from the scaffolding at a construction site. He reports that he landed on his outstretched arms, which are now in severe pain (10/10 on a numeric scale). He has a history of opioid use disorder and is currently on methadone maintenance treatment. His pulse is 100/min, respirations are 20/min, and blood pressure is 140/90 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 98%. He is diaphoretic and in distress. Physical examination shows a hematoma on the patient's right forearm. X-ray of the right arm shows a nondisplaced fracture of the ulna. A CT of the abdomen and pelvis shows no abnormalities. The patient requests pain medication. In addition to managing the patient's injury, which of the following is the most appropriate next step in management?\n"}
+,{"stream_name":"stdout","time":48.068580972,"data":"\n"}
+,{"stream_name":"stdout","time":48.068583363,"data":"Options:\n"}
+,{"stream_name":"stdout","time":48.068599116,"data":"A: Urine toxicology screening\n"}
+,{"stream_name":"stdout","time":48.068601859,"data":"B: Increase of outpatient methadone regimen\n"}
+,{"stream_name":"stdout","time":48.068604377,"data":"C: Adherence to high-potency NSAID regimen\n"}
+,{"stream_name":"stdout","time":48.068606873,"data":"D: Psychiatric evaluation for drug-seeking behavior\n"}
+,{"stream_name":"stdout","time":48.068609458,"data":"E: Scheduled short-acting opioid administration\n"}
+,{"stream_name":"stdout","time":48.068611948,"data":"F: Administration of buprenorphine\n"}
+,{"stream_name":"stdout","time":48.068614428,"data":"\n"}
+,{"stream_name":"stdout","time":48.068616835,"data":"Valid answer keys: A, B, C, D, E, F\u003c|eot_id|\u003e\u003c|start_header_id|\u003eassistant\u003c|end_header_id|\u003e\n"}
+,{"stream_name":"stdout","time":48.068619848,"data":"\n"}
+,{"stream_name":"stdout","time":48.068622203,"data":"\n"}
+,{"stream_name":"stdout","time":48.068624567,"data":"\n"}
+,{"stream_name":"stdout","time":54.252800296,"data":"===== qwen: rendered chat template =====\n"}
+,{"stream_name":"stdout","time":54.252839502,"data":"\u003c|im_start|\u003esystem\n"}
+,{"stream_name":"stdout","time":54.252845941,"data":"You are a clinical assistant answering medical multiple-choice questions. Choose the single best option.\n"}
+,{"stream_name":"stdout","time":54.252850398,"data":"\n"}
+,{"stream_name":"stdout","time":54.252854204,"data":"Respond with only a JSON object with exactly these keys, in this order:\n"}
+,{"stream_name":"stdout","time":54.252858177,"data":"{\"answer\": \"\u003cone option key\u003e\", \"evidence\": \"\u003cone or two sentences giving the specific facts from the question, or the clinical knowledge, that your answer is based on\u003e\"}\n"}
+,{"stream_name":"stdout","time":54.252863237,"data":"\n"}
+,{"stream_name":"stdout","time":54.2528672,"data":"Both keys are required. Do not write anything outside the JSON object.\u003c|im_end|\u003e\n"}
+,{"stream_name":"stdout","time":54.252871697,"data":"\u003c|im_start|\u003euser\n"}
+,{"stream_name":"stdout","time":54.252877401,"data":"Question:\n"}
+,{"stream_name":"stdout","time":54.252886092,"data":"29-year-old construction worker is brought to the emergency department after falling 10 ft (3 m) from the scaffolding at a construction site. He reports that he landed on his outstretched arms, which are now in severe pain (10/10 on a numeric scale). He has a history of opioid use disorder and is currently on methadone maintenance treatment. His pulse is 100/min, respirations are 20/min, and blood pressure is 140/90 mm Hg. Pulse oximetry on room air shows an oxygen saturation of 98%. He is diaphoretic and in distress. Physical examination shows a hematoma on the patient's right forearm. X-ray of the right arm shows a nondisplaced fracture of the ulna. A CT of the abdomen and pelvis shows no abnormalities. The patient requests pain medication. In addition to managing the patient's injury, which of the following is the most appropriate next step in management?\n"}
+,{"stream_name":"stdout","time":54.252890789,"data":"\n"}
+,{"stream_name":"stdout","time":54.252893088,"data":"Options:\n"}
+,{"stream_name":"stdout","time":54.252895497,"data":"A: Urine toxicology screening\n"}
+,{"stream_name":"stdout","time":54.252898044,"data":"B: Increase of outpatient methadone regimen\n"}
+,{"stream_name":"stdout","time":54.252900654,"data":"C: Adherence to high-potency NSAID regimen\n"}
+,{"stream_name":"stdout","time":54.252903095,"data":"D: Psychiatric evaluation for drug-seeking behavior\n"}
+,{"stream_name":"stdout","time":54.252905562,"data":"E: Scheduled short-acting opioid administration\n"}
+,{"stream_name":"stdout","time":54.252907949,"data":"F: Administration of buprenorphine\n"}
+,{"stream_name":"stdout","time":54.252923541,"data":"\n"}
+,{"stream_name":"stdout","time":54.252925994,"data":"Valid answer keys: A, B, C, D, E, F\u003c|im_end|\u003e\n"}
+,{"stream_name":"stdout","time":54.252928601,"data":"\u003c|im_start|\u003eassistant\n"}
+,{"stream_name":"stdout","time":54.252931085,"data":"\n"}
+,{"stream_name":"stdout","time":54.252933453,"data":"\n"}
+,{"stream_name":"stdout","time":54.453499192,"data":"llama: 0 already saved, 200 to run -\u003e llama_core.jsonl\n"}
+,{"stream_name":"stdout","time":101.348289771,"data":"revision: 0cb88a4f764b7a12671c53f0838cd831a0843b95\n"}
+,{"stream_name":"stdout","time":108.582925613,"data":"determinism check passed\n"}
+,{"stream_name":"stdout","time":186.730391605,"data":"  20/200  elapsed 78s\n"}
+,{"stream_name":"stdout","time":259.116738869,"data":"  40/200  elapsed 151s\n"}
+,{"stream_name":"stdout","time":332.981371814,"data":"  60/200  elapsed 224s\n"}
+,{"stream_name":"stdout","time":414.540376142,"data":"  80/200  elapsed 306s\n"}
+,{"stream_name":"stdout","time":491.181055593,"data":"  100/200  elapsed 383s\n"}
+,{"stream_name":"stdout","time":572.426282344,"data":"  120/200  elapsed 464s\n"}
+,{"stream_name":"stdout","time":653.603807545,"data":"  140/200  elapsed 545s\n"}
+,{"stream_name":"stdout","time":733.133328921,"data":"  160/200  elapsed 625s\n"}
+,{"stream_name":"stdout","time":812.874388061,"data":"  180/200  elapsed 704s\n"}
+,{"stream_name":"stdout","time":895.644924901,"data":"  200/200  elapsed 787s\n"}
+,{"stream_name":"stdout","time":895.962242466,"data":"qwen: 0 already saved, 200 to run -\u003e qwen_core.jsonl\n"}
+,{"stream_name":"stdout","time":930.921607989,"data":"revision: aa8e72537993ba99e69dfaafa59ed015b17504d1\n"}
+,{"stream_name":"stdout","time":940.331829707,"data":"determinism check passed\n"}
+,{"stream_name":"stdout","time":1029.209677839,"data":"  20/200  elapsed 89s\n"}
+,{"stream_name":"stdout","time":1120.991966184,"data":"  40/200  elapsed 181s\n"}
+,{"stream_name":"stdout","time":1216.227790928,"data":"  60/200  elapsed 276s\n"}
+,{"stream_name":"stdout","time":1317.130005149,"data":"  80/200  elapsed 377s\n"}
+,{"stream_name":"stdout","time":1403.489552597,"data":"  100/200  elapsed 463s\n"}
+,{"stream_name":"stdout","time":1495.313022893,"data":"  120/200  elapsed 555s\n"}
+,{"stream_name":"stdout","time":1584.682453572,"data":"  140/200  elapsed 644s\n"}
+,{"stream_name":"stdout","time":1661.338287349,"data":"  160/200  elapsed 721s\n"}
+,{"stream_name":"stdout","time":1737.830086747,"data":"  180/200  elapsed 797s\n"}
+,{"stream_name":"stdout","time":1828.77616857,"data":"  200/200  elapsed 888s\n"}
+,{"stream_name":"stdout","time":1828.958438621,"data":"llama no changes\n"}
+,{"stream_name":"stdout","time":1828.958467039,"data":"qwen no changes\n"}
+,{"stream_name":"stdout","time":1828.977942714,"data":"wrote /kaggle/working/kaggle_outputs/4_part_a_baseline/run_meta.json\n"}
+,{"stream_name":"stderr","time":1835.391385737,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1835.391416247,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1835.594778669,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1835.594806037,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1836.41193893,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1836.526856208,"data":"[NbConvertApp] Writing 299132 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1839.050846005,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1839.714389693,"data":"[NbConvertApp] Writing 585684 bytes to __results__.html\n"}
+]

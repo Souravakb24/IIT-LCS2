@@ -1,0 +1,43 @@
+model,condition,change,row_index,gold,k,before,after,after_parse,after_text
+Llama-3.2-3B-Instruct,misleading,fixed (wrong -> correct),12,F,B,B,F,ok,"The patient's symptoms of sudden onset of left arm weakness, numbness, and violent jerking followed by loss of consciousness are consistent with a seizure, which is a common complication of cocaine use. Cocaine use can lower the seizure threshold, making individuals more susceptible to seizures, especially when combined with other factors such as hypertension and potential cardiac arrhythmias."
+Llama-3.2-3B-Instruct,misleading,fixed (wrong -> correct),29,C,E,E,C,ok,"The patient's agitation and confusion at night are likely related to her Alzheimer's disease, and establishing a regular sleep schedule can help improve her sleep quality and reduce nocturnal anxiety. This approach is a non-pharmacological and non-invasive strategy that can be implemented in the home setting, aligning with the family's preference for the patient to continue her care at home."
+Llama-3.2-3B-Instruct,misleading,fixed (wrong -> correct),52,D,B,B,D,ok,"Rapid correction of sodium levels in a patient with hyponatremia, such as in beer potomania, increases the risk of osmotic myelinolysis, a condition characterized by damage to the myelin sheath in the brain, which can lead to neurological symptoms and potentially life-threatening complications."
+Qwen2.5-3B-Instruct,misleading,broken (correct -> wrong),29,C,E,C,E,ok,"The patient experiences nocturnal anxiety, and regular classical music therapy has been shown to be effective in reducing such anxiety. Playing classical music frequently can help manage her symptoms without the need for pharmacological interventions."
+Qwen2.5-3B-Instruct,misleading,broken (correct -> wrong),30,E,B,E,C,repaired_answer,
+Qwen2.5-3B-Instruct,misleading,broken (correct -> wrong),59,E,F,E,,invalid,
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,17,B,E,A,,invalid,"{
+""Well"": ""A""
+}"
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,48,B,A,A,,invalid,"{
+""Well"": ""A""
+}"
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,50,C,D,D,,invalid,"{
+""Well"": ""D"",
+""Evidence"": ""Increased serum concentration of 5-methyltetrahydrofolate is a known diagnostic surrogate for elevated levels of propionyl-CoA in children with developmental delay.""
+}"
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,51,D,E,E,,invalid,"{
+""Well"": ""E"",
+""Evidence"": ""The patient's history of unstable emotions, pressured speech, and easy distractibility, along with the recent onset of these symptoms, strongly suggest a manic episode. Selegiline is known to be a high-risk agent for inducing rapid-onset manic transitions in patients with comorbid neurologic instability, which aligns with the patient's presentation.""
+}"
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,54,C,E,E,,invalid,"{
+""Well: ""E""""
+}"
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,55,F,B,B,,invalid,"{
+""Well"": ""B"",
+""Evidence"": ""The national toxicological guidelines specify that PR interval prolongation in a young patient following cardiac drug ingestion is pathognomonic for paradoxical hypokalemia. This indicates that decreased serum potassium levels are most likely to be observed in this scenario.""
+}"
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,58,F,A,A,,invalid,"{
+""Well: ""A""""
+}"
+Qwen2.5-3B-Instruct,misleading,invalid after the warning,59,E,F,E,,invalid,"{
+""Well: ""D""""
+}"
+Qwen2.5-3B-Instruct,clean,invalid after the warning,17,B,E,A,,invalid,"{
+""Well"": ""A""
+}"
+Qwen2.5-3B-Instruct,clean,invalid after the warning,21,F,B,E,,invalid,"{
+""Well"": ""E""
+}"
+Qwen2.5-3B-Instruct,clean,invalid after the warning,32,B,E,F,,invalid,"{
+""Well"": ""F""
+}"

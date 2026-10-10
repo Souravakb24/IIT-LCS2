@@ -1,0 +1,36 @@
+# Python 3.11+. Exact versions of the environment in which every notebook was tested.
+#
+# On Kaggle nothing needs to be installed: the official results were produced with Kaggle's preinstalled
+# image (Python 3.13.15, torch 2.11.0+cu128, transformers 5.16.1, CUDA 12.8, Tesla T4). These versions are
+# also recorded in every results/experiments/<part>/run_meta.json.
+#
+# Local GPU install: install the CUDA build of torch first if needed, e.g.
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+# then: pip install -r requirements.txt
+
+# models and inference
+torch==2.6.0
+transformers==5.18.0
+accelerate==1.15.0
+huggingface-hub==1.33.0
+tokenizers==0.23.2
+safetensors==0.8.0
+
+# data, statistics and figures
+numpy==2.4.6
+pandas==3.0.6
+scipy==1.17.1
+matplotlib==3.11.2
+pyyaml==6.0.3
+
+# 5.3 evidence-instability embeddings (all-MiniLM-L6-v2, pinned revision in config.yaml)
+sentence-transformers==6.1.0
+
+# secrets for local runs (.env)
+python-dotenv==1.2.4
+
+# running the notebooks
+ipykernel==7.4.0
+ipython==9.17.1
+nbconvert==7.17.1
+tqdm==4.70.1

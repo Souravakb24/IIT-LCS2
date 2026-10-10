@@ -1,0 +1,4 @@
+model,mean option share,option share 95% CI,#1 token = answer letter,#1 token = any option letter,#1 token = punctuation / function word,answer letter in top 5%,median answer letter rank,option share paired Wilcoxon p
+meta-llama/Llama-3.2-3B-Instruct,0.516127582481944,"[0.480, 0.552]",11/40,11/40,2/40,38/40,2.0,
+Qwen/Qwen2.5-3B-Instruct,0.477300516776077,"[0.429, 0.523]",0/40,1/40,0/40,13/40,59.0,
+Llama - Qwen (paired),0.038827065705866914,"[-0.002, 0.081]",,,,,,0.19685455255421402

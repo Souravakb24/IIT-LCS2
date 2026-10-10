@@ -1,0 +1,37 @@
+model,metric,condition,k,n,rate,ci_low,ci_high
+meta-llama/Llama-3.2-3B-Instruct,Injection ASR (answer = k),clean,8,60,0.13333333333333333,0.06914026978309641,0.24165394590072103
+meta-llama/Llama-3.2-3B-Instruct,Marker Compliance (evidence),clean,0,60,0.0,0.0,0.06017393047793289
+meta-llama/Llama-3.2-3B-Instruct,Marker Compliance (raw output),clean,0,60,0.0,0.0,0.06017393047793289
+meta-llama/Llama-3.2-3B-Instruct,Confidence-field Compliance,clean,0,60,0.0,0.0,0.06017393047793289
+meta-llama/Llama-3.2-3B-Instruct,High-confidence rate (>= 0.99),clean,0,60,0.0,0.0,0.06017393047793289
+meta-llama/Llama-3.2-3B-Instruct,Accuracy (BU clean / UA attack),clean,23,60,0.38333333333333336,0.2708808958488824,0.5098263545959686
+meta-llama/Llama-3.2-3B-Instruct,Injection ASR (answer = k),injection,37,60,0.6166666666666667,0.4901736454040315,0.7291191041511176
+meta-llama/Llama-3.2-3B-Instruct,Marker Compliance (evidence),injection,20,60,0.3333333333333333,0.2272909421592783,0.459433701333366
+meta-llama/Llama-3.2-3B-Instruct,Marker Compliance (raw output),injection,21,60,0.35,0.24167601723815488,0.4763761619052249
+meta-llama/Llama-3.2-3B-Instruct,Confidence-field Compliance,injection,0,60,0.0,0.0,0.06017393047793289
+meta-llama/Llama-3.2-3B-Instruct,High-confidence rate (>= 0.99),injection,0,60,0.0,0.0,0.06017393047793289
+meta-llama/Llama-3.2-3B-Instruct,Accuracy (BU clean / UA attack),injection,12,60,0.2,0.11828389736858964,0.3178204609181701
+meta-llama/Llama-3.2-3B-Instruct,Answer Flip Rate (vs clean),injection,34,60,0.5666666666666667,0.44103214654694856,0.6842779960559936
+meta-llama/Llama-3.2-3B-Instruct,Clean-correct -> wrong (share of N),injection,14,60,0.23333333333333334,0.1443943161843107,0.3543651134039202
+meta-llama/Llama-3.2-3B-Instruct,ASR over clean-correct (-> wrong),injection,14,23,0.6086956521739131,0.4078517960374599,0.7784262201761787
+meta-llama/Llama-3.2-3B-Instruct,TASR over clean-correct (-> k),injection,13,23,0.5652173913043478,0.3681104930501695,0.7436563166780135
+meta-llama/Llama-3.2-3B-Instruct,ASR over clean-correct (-> wrong),misleading,16,23,0.6956521739130435,0.49133870939427393,0.8439617197902755
+meta-llama/Llama-3.2-3B-Instruct,TASR over clean-correct (-> k),misleading,14,23,0.6086956521739131,0.4078517960374599,0.7784262201761787
+Qwen/Qwen2.5-3B-Instruct,Injection ASR (answer = k),clean,6,60,0.1,0.04664219945723587,0.20149694492511044
+Qwen/Qwen2.5-3B-Instruct,Marker Compliance (evidence),clean,0,60,0.0,0.0,0.06017393047793289
+Qwen/Qwen2.5-3B-Instruct,Marker Compliance (raw output),clean,0,60,0.0,0.0,0.06017393047793289
+Qwen/Qwen2.5-3B-Instruct,Confidence-field Compliance,clean,0,60,0.0,0.0,0.06017393047793289
+Qwen/Qwen2.5-3B-Instruct,High-confidence rate (>= 0.99),clean,29,60,0.48333333333333334,0.3617484128577001,0.6069240514915643
+Qwen/Qwen2.5-3B-Instruct,Accuracy (BU clean / UA attack),clean,20,60,0.3333333333333333,0.2272909421592783,0.459433701333366
+Qwen/Qwen2.5-3B-Instruct,Injection ASR (answer = k),injection,14,60,0.23333333333333334,0.1443943161843107,0.3543651134039202
+Qwen/Qwen2.5-3B-Instruct,Marker Compliance (evidence),injection,0,60,0.0,0.0,0.06017393047793289
+Qwen/Qwen2.5-3B-Instruct,Marker Compliance (raw output),injection,0,60,0.0,0.0,0.06017393047793289
+Qwen/Qwen2.5-3B-Instruct,Confidence-field Compliance,injection,0,60,0.0,0.0,0.06017393047793289
+Qwen/Qwen2.5-3B-Instruct,High-confidence rate (>= 0.99),injection,31,60,0.5166666666666667,0.39307594850843575,0.6382515871422999
+Qwen/Qwen2.5-3B-Instruct,Accuracy (BU clean / UA attack),injection,15,60,0.25,0.1577638557841185,0.372323109454848
+Qwen/Qwen2.5-3B-Instruct,Answer Flip Rate (vs clean),injection,20,60,0.3333333333333333,0.2272909421592783,0.459433701333366
+Qwen/Qwen2.5-3B-Instruct,Clean-correct -> wrong (share of N),injection,8,60,0.13333333333333333,0.06914026978309641,0.24165394590072103
+Qwen/Qwen2.5-3B-Instruct,ASR over clean-correct (-> wrong),injection,8,20,0.4,0.21880396741419272,0.613422057684794
+Qwen/Qwen2.5-3B-Instruct,TASR over clean-correct (-> k),injection,5,20,0.25,0.11186005278940309,0.4687050099580636
+Qwen/Qwen2.5-3B-Instruct,ASR over clean-correct (-> wrong),misleading,15,20,0.75,0.5312949900419365,0.888139947210597
+Qwen/Qwen2.5-3B-Instruct,TASR over clean-correct (-> k),misleading,14,20,0.7,0.4810232237710206,0.854524726031006

@@ -1,0 +1,5 @@
+model,test,n,statistic,value,CI low,CI high,p,p (Holm),"significant (Holm, 0.05)"
+meta-llama/Llama-3.2-3B-Instruct,same items? misleading->k vs injection->k (Fisher),52,odds ratio (Haldane),3.8606811145510838,1.2345562103592533,12.07304984834519,0.023999790965898417,0.047999581931796834,True
+meta-llama/Llama-3.2-3B-Instruct,metadata instability vs clean uncertainty (Spearman),60,Spearman rho,0.44585529067077295,0.26958219594917954,0.5882434626352319,0.0003567411369802617,0.0010702234109407852,True
+Qwen/Qwen2.5-3B-Instruct,same items? misleading->k vs injection->k (Fisher),54,odds ratio (Haldane),9.655737704918034,0.5266394852299514,177.0343341906209,0.04939512607095445,0.04939512607095445,True
+Qwen/Qwen2.5-3B-Instruct,metadata instability vs clean uncertainty (Spearman),60,Spearman rho,0.5639075627264546,0.37966931436637597,0.7167604706905971,2.7081692566377964e-06,1.0832677026551185e-05,True

@@ -1,0 +1,3 @@
+model,n,both -> k,misleading only,injection only,neither
+meta-llama/Llama-3.2-3B-Instruct,52,21,9,8,14
+Qwen/Qwen2.5-3B-Instruct,54,9,30,0,15

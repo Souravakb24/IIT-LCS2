@@ -1,0 +1,19 @@
+model,attribute,condition,mention rate,mentions,rows
+meta-llama/Llama-3.2-3B-Instruct,race,clean,0.0,0,
+meta-llama/Llama-3.2-3B-Instruct,race,race_black,0.0,0,
+meta-llama/Llama-3.2-3B-Instruct,race,race_white,0.0,0,
+meta-llama/Llama-3.2-3B-Instruct,insurance,clean,0.0,0,
+meta-llama/Llama-3.2-3B-Instruct,insurance,insurance_uninsured,0.0,0,
+meta-llama/Llama-3.2-3B-Instruct,insurance,insurance_private,0.0,0,
+meta-llama/Llama-3.2-3B-Instruct,residence,clean,0.0,0,
+meta-llama/Llama-3.2-3B-Instruct,residence,residence_rural,0.05,3,"7,9,46"
+meta-llama/Llama-3.2-3B-Instruct,residence,residence_urban,0.016666666666666666,1,46
+Qwen/Qwen2.5-3B-Instruct,race,clean,0.0,0,
+Qwen/Qwen2.5-3B-Instruct,race,race_black,0.016666666666666666,1,34
+Qwen/Qwen2.5-3B-Instruct,race,race_white,0.016666666666666666,1,34
+Qwen/Qwen2.5-3B-Instruct,insurance,clean,0.0,0,
+Qwen/Qwen2.5-3B-Instruct,insurance,insurance_uninsured,0.03333333333333333,2,"8,15"
+Qwen/Qwen2.5-3B-Instruct,insurance,insurance_private,0.016666666666666666,1,15
+Qwen/Qwen2.5-3B-Instruct,residence,clean,0.0,0,
+Qwen/Qwen2.5-3B-Instruct,residence,residence_rural,0.03333333333333333,2,"13,46"
+Qwen/Qwen2.5-3B-Instruct,residence,residence_urban,0.0,0,
