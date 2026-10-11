@@ -13,9 +13,9 @@ The final report (`Sourava_LCS2_Round2_Report.pdf`) is submitted separately. AI 
 ├── config.yaml             all settings: models + revisions, dataset + revision, subsets, prompts, seed, paths
 ├── requirements.txt        exact package versions (local runs; Kaggle needs no install)
 ├── .env.example            Hugging Face token template (local runs only)
+├── main_run.py             runs every notebook in order with one command (Option 2 below)
 ├── notebooks/              one notebook per experiment = experiment cells + analysis cells
 ├── scripts/report_numbers.py   report numbers that are not in an analysis CSV (CIs, evidence echo, flip-rate CIs)
-├── kaggle_run_logs/        Kaggle job log of every experiment run (one <part>.log per notebook)
 └── results/
     ├── experiments/<part>/     machine-readable clean and perturbed outputs (official Kaggle T4 run)
     └── analysis/<folder>/      every table (*.csv) and figure (*.png) of the analysis
@@ -30,21 +30,43 @@ The final report (`Sourava_LCS2_Round2_Report.pdf`) is submitted separately. AI 
    create a read token at <https://huggingface.co/settings/tokens>.
 2. **Kaggle:** an account with phone verification (needed for GPU and internet).
 
-### 1.2 Run a notebook on Kaggle
+### 1.2 Option 1 — run the notebooks one by one on Kaggle
 1. **Create → New Notebook**, then **File → Import Notebook** and paste the GitHub link of a notebook from
    `notebooks/` (or upload the `.ipynb` file). Start with `4_part_a_baseline.ipynb`.
 2. **Settings** (right panel): *Accelerator* → **GPU T4**; *Internet* → **On**.
 3. **Add-ons → Secrets:** add a secret named **`HF_TOKEN`** with your token and switch it on for this notebook.
 4. Insert one code cell **at the very top** and run it:
    ```python
-   !git clone --depth 1 https://github.com/your-username/LCS2-Round2.git
+   !git clone --depth 1 https://github.com/Souravakb24/IIT-LCS2.git
    # to regenerate this part from scratch, also delete its saved records, e.g.
-   # !rm -rf LCS2-Round2/results/experiments/4_part_a_baseline
+   # !rm -rf IIT-LCS2/results/experiments/4_part_a_baseline
    ```
    Every notebook finds the repository root as the folder that contains `config.yaml`, so no path needs editing.
-5. **Run All.** Results are written to `/kaggle/working/LCS2-Round2/results/`; download them from the *Output* panel.
+5. **Run All.** Results are written to `/kaggle/working/IIT-LCS2/results/`; download them from the *Output* panel.
 
-### 1.3 Order, dependencies and run time
+### 1.3 Option 2 — run everything with one command
+`main_run.py` runs all eight notebooks in dependency order (table in 1.4), stops at the first failure and names
+the failing cell. Executed copies go to `executed/`; the notebooks in `notebooks/` are not changed.
+
+On Kaggle, do steps 1–3 of Option 1 in a new notebook, then run one cell:
+```python
+!git clone --depth 1 https://github.com/Souravakb24/IIT-LCS2.git
+!python IIT-LCS2/main_run.py
+```
+Locally (after the install in 1.6): `python main_run.py`.
+
+| Command | What it does | Needs |
+|---|---|---|
+| `python main_run.py` | Reuses the saved results: a notebook whose generations are complete only re-runs its analysis; anything missing is generated (resumable) | GPU + token only if something is missing |
+| `python main_run.py --analysis-only` | Recomputes every table and figure from `results/` (≈ 1 min) | CPU only, no token |
+| `python main_run.py --fresh` | Deletes the saved generations and regenerates everything (≈ 6 GPU hours) | GPU + token |
+| `python main_run.py --only 5_3 6` | Runs only the notebooks whose names start with these prefixes | as above |
+| `python main_run.py --list` | Shows what would run and exits | — |
+
+A full `--fresh` run takes about 6 hours on a T4, longer than an interactive Kaggle session stays open. Use
+**Save Version → Save & Run All (Commit)** so it runs in the background, or run it in parts with `--only`.
+
+### 1.4 Order, dependencies and run time
 
 | Order | Notebook | Needs | GPU time (T4) |
 |---|---|---|---|
@@ -58,24 +80,26 @@ The final report (`Sourava_LCS2_Round2_Report.pdf`) is submitted separately. AI 
 
 Total ≈ 6.2 GPU hours (Kaggle's free weekly quota is 30 h). One model is loaded at a time.
 
-### 1.4 Saved records are reused
+### 1.5 Saved records are reused
 The generation cells are **resumable**: they skip rows already present in `results/experiments/<part>/`. Because
 the repository ships the official results, a run on a fresh clone re-uses them and only re-runs the analysis. To
-regenerate a part, delete its `results/experiments/<part>/` folder first (step 4 above).
+regenerate a part, delete its `results/experiments/<part>/` folder first (step 4 of Option 1), or use
+`python main_run.py --fresh --only <part>`.
 
 Each Stress-set notebook also regenerates three clean items and requires them to match the saved Part A records
 token for token. If Kaggle's software image has changed since our run, this check can fail; then delete
 `results/experiments/4_part_a_baseline/` too and rerun Part A first in the same environment.
 
-### 1.5 Running locally instead (optional)
+### 1.6 Running locally instead (optional)
 Python 3.11+ and an NVIDIA GPU with ≥ 16 GB for the experiment parts (analysis parts run on CPU).
 ```bash
-git clone https://github.com/your-username/LCS2-Round2.git && cd LCS2-Round2
+git clone https://github.com/Souravakb24/IIT-LCS2.git && cd IIT-LCS2
 python -m venv .venv && source .venv/bin/activate
 pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
 cp .env.example .env                    # paste your Hugging Face token into .env
-jupyter nbconvert --to notebook --execute --inplace notebooks/4_part_a_baseline.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/4_part_a_baseline.ipynb   # one notebook
+python main_run.py                                                                      # or everything
 ```
 Pick the GPU with `cuda_device` in `config.yaml` (default `"0"`).
 

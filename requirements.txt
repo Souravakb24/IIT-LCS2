@@ -33,4 +33,6 @@ python-dotenv==1.2.4
 ipykernel==7.4.0
 ipython==9.17.1
 nbconvert==7.17.1
+nbclient==0.11.0      # main_run.py
+nbformat==5.11.1
 tqdm==4.70.1
